@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.typed-text {
+  opacity: 0; /* Initially hide the typed text */
+  transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+.fade-in {
+  opacity: 1 !important; /* Show the typed text with fade-in effect */
+}
+
+.border-container {
+  transition: border-bottom-width 0.3s ease;
+  /* outline: none; */
+}
+
+.border-container:hover {
+  border-bottom-width: 1rem; /* Move the border up on hover */
+  /* border: 1px solid rgba(0, 0, 0, 0.883); */
+}
+
+.card{
+  width: 10rem;
+  height: 8rem;
+  background-color: #fff;
+  border-radius: .3rem;
+  border: 1px solid rgba(128, 128, 128, 0.344);
+  box-shadow: 0 1rem 2rem #0002;
+  position: relative;
+}
+
+.card .ribbon-1{
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  left: -.8rem;
+  top: -.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0; 
+  overflow: hidden;
+}
+.card .ribbon-1::before{
+  content: 'POPULAR';
+  position: absolute;
+  background: linear-gradient(to right, #ec008c, #ff64c1);
+  width: 145%;
+  height: 2rem;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+  
+  transform: rotate(-45deg) translateY(-1rem);
+}
+.card .ribbon-1::after{
+  position: absolute;
+  background-color: #a60867;
+  left: 0;
+  bottom: 0;
+  width: .8rem;
+  height: .8rem;
+  content: '';
+  box-shadow: 7.2rem -7.2rem #a60867;
+  z-index: -100;
+  
+
+}
+
+
+/* .ribbon-1{
+  position: absolute;
+  text-indent: -9999px;
+  top: -5px;
+  left: -5px;
+  background: url(../src/assets/shop.png) no-repeat 0 0; 
+  width: 81px;
+  height: 80px;
+  z-index: 3;
+} */
