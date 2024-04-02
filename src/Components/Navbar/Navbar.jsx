@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import padlock from '../../assets/padlock.png'
+import x from '../../assets/x-mark.png'
 
 const Navbar = () => {
 
@@ -54,6 +56,11 @@ const Navbar = () => {
                 <li>Login</li>
             </ul>
         </nav>
+      </div>
+      <div className='dark'>
+        <div className='bg-lime-600 w-[30rem] p-[12rem] absolute'>
+          <img src={padlock} alt="" />
+        </div>
       </div>
     </div>
   )
