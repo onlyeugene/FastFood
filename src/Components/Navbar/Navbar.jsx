@@ -43,17 +43,21 @@ const Navbar = () => {
 
   const handleInputClick = (e) => {
     e.target.classList.toggle('bg-lime-500'); // Toggle the class to change background color
+    // Disable scrolling on body
   };
 
   const [showModal, setShowModal] = useState(false);
 
-  const handleCloseModal =  () => {
-    setShowModal(false);
-  }
-
   const handleLoginClick = () => {
-    setShowModal(true); // Open the modal when "Login" is clicked
+    setShowModal(true)
   };
+  
+  const handleCloseModal = () => {
+    setShowModal(false); // Open the modal when "Login" is clicked
+  document.body.style.overflow = 'hidden'; // Enable scrolling on body
+};
+
+  
 
 
 
