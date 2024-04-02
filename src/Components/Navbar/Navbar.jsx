@@ -22,18 +22,22 @@ const Navbar = () => {
   }, []);
 
 
-  const[Modal, setModal] =useState(false)
-  const toggleModal = () => {
-    setModal(!Modal);
+  // const[Modal, setModal] =useState(false)
+  // const toggleModal = () => {
+  //   setModal(!Modal);
 
 
-    // Add or remove the class on the body
-    if (!isModal) {
-      document.body.classList.add("modal-open");
-    } else {
-      document.body.classList.remove("modal-open");
-    }
-  };
+  //   // Add or remove the class on the body
+  //   if (!isModal) {
+  //     document.body.classList.add("modal-open");
+  //   } else {
+  //     document.body.classList.remove("modal-open");
+  //   }
+  // };
+  // const [showModal, setShowModal] = useState(false); 
+  // const toggleModal = () => {
+  //   setShowModal(!showModal);
+  // };
 
 
   return (
