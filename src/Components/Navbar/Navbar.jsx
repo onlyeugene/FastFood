@@ -41,6 +41,21 @@ const Navbar = () => {
   //   setShowModal(!showModal);
   // };
 
+  const handleInputClick = (e) => {
+    e.target.classList.toggle('bg-lime-500'); // Toggle the class to change background color
+  };
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal =  () => {
+    setShowModal(false);
+  }
+
+  const handleLoginClick = () => {
+    setShowModal(true); // Open the modal when "Login" is clicked
+  };
+
+
 
   return (
     <div className={`w-full z-20 text-white fixed top-0 ${scrolled ? 'bg-lime-600' : ''}`}>
@@ -53,15 +68,28 @@ const Navbar = () => {
                 <li>About</li>
                 <li>Faq</li>
                 <li>Pages</li>
-                <li>Login</li>
+                <li onClick={handleLoginClick}>Login</li>
             </ul>
         </nav>
       </div>
+      {showModal && (
       <div className='dark'>
-        <div className='bg-lime-600 w-[30rem] p-[12rem] absolute'>
-          <img src={padlock} alt="" />
+        <div className='bg-lime-600 w-[rem] p-[3rem] px-[5rem] absolute top-[20rem] left-1/3 flex flex-col items-center'>
+        <img src={x} alt="close icon"  className='top-3 right-3 absolute w-[1.3rem]' onClick={handleCloseModal}/>
+          <div>
+            <img src={padlock} alt="padlock icon" className='w-[2.5rem] pb-5'/>
+          </div>
+          <form action="">
+              <div className='flex flex-col gap-[1rem] '>
+                <input type="username" placeholder='Username' className='outline-none py-[.3rem] px-[.5rem] pr-[8rem] border bg-transparent text-[.8rem] text-white' onClick={handleInputClick} />
+                <input type="password" placeholder='Password' className='outline-none py-[.3rem] px-[.5rem] pr-[8rem] border bg-transparent text-[.8rem] text-white' onClick={handleInputClick} />
+                <p className='text-[.7rem] py-1 pb-5'>Forgot Password?</p>
+              </div>
+              <input type="submit" placeholder='Submit'  className='outline-none py-[.3rem] px-[6.9rem] border bg-transparent text-[.8rem]'/>  
+          </form>
         </div>
       </div>
+      )}
     </div>
   )
 }

@@ -96,6 +96,15 @@ body{
 }
 
 
+input[type="password"]::placeholder {
+  color: white; /* You can customize the color for password input */
+}
+
+input[type='username']::placeholder{
+  color: white;
+}
+
+
 /* .ribbon-1{
   position: absolute;
   text-indent: -9999px;
