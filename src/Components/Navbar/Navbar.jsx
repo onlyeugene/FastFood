@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import padlock from '../../assets/padlock.png'
 import x from '../../assets/x-mark.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -41,22 +42,27 @@ const Navbar = () => {
   //   setShowModal(!showModal);
   // };
 
+  
+  
+  const [modalOpen, setModalOpen] = useState(false);
+  
   const handleInputClick = (e) => {
     e.target.classList.toggle('bg-lime-500'); // Toggle the class to change background color
-    // Disable scrolling on body
   };
 
-  const [showModal, setShowModal] = useState(false);
-
-  const handleLoginClick = () => {
-    setShowModal(true)
+  const handleOpenModal = () => {
+    setModalOpen(true);
+    document.body.style.overflow = 'hidden'; // Set overflow to hidden when modal is open
   };
-  
+
   const handleCloseModal = () => {
-    setShowModal(false); // Open the modal when "Login" is clicked
-  document.body.style.overflow = 'hidden'; // Enable scrolling on body
-};
-
+    setModalOpen(false);
+    document.body.style.overflow = 'auto'; // Set overflow to auto when modal is closed
+  };
+  const handleCloseModalBody = () => {
+    setModalOpen(false);
+    document.body.style.overflow = 'auto'; // Set overflow to auto when modal is closed
+  };
   
 
 
@@ -64,32 +70,49 @@ const Navbar = () => {
   return (
     <div className={`w-full z-20 text-white fixed top-0 ${scrolled ? 'bg-lime-600' : ''}`}>
       <div className='flex justify-between py-[1rem] px-[2rem]'>
-        <h1 className=''>FastFood</h1>
+        <Link to={'/'}>
+          <h1>FastFood</h1>
+        </Link>
         <nav>
-            <ul className='flex gap-[1.5rem]'>
-                <li>Home</li>
+            <ul className='flex gap-[1.5rem] cursor-pointer'>
+                <Link to={'/'}>
+                  <li>Home</li>
+                </Link>
                 <li>Restaurants</li>
-                <li>About</li>
+                <Link to={'/about'}>
+                  <li>About</li>
+                </Link>
                 <li>Faq</li>
                 <li>Pages</li>
-                <li onClick={handleLoginClick}>Login</li>
+                <li onClick={handleOpenModal}>Login</li>
             </ul>
         </nav>
       </div>
-      {showModal && (
-      <div className='dark'>
+      {modalOpen && (
+      <div className='dark' onClick={handleCloseModalBody}>
         <div className='bg-lime-600 w-[rem] p-[3rem] px-[5rem] absolute top-[20rem] left-1/3 flex flex-col items-center'>
-        <img src={x} alt="close icon"  className='top-3 right-3 absolute w-[1.3rem]' onClick={handleCloseModal}/>
+        <img src={x} alt="close icon"  className='top-3 right-3 absolute w-[1.3rem] cursor-pointer' onClick={handleCloseModal}/>
           <div>
             <img src={padlock} alt="padlock icon" className='w-[2.5rem] pb-5'/>
           </div>
           <form action="">
               <div className='flex flex-col gap-[1rem] '>
-                <input type="username" placeholder='Username' className='outline-none py-[.3rem] px-[.5rem] pr-[8rem] border bg-transparent text-[.8rem] text-white' onClick={handleInputClick} />
-                <input type="password" placeholder='Password' className='outline-none py-[.3rem] px-[.5rem] pr-[8rem] border bg-transparent text-[.8rem] text-white' onClick={handleInputClick} />
+                <input type="username"
+                  placeholder='Username' 
+                  className='outline-none py-[.3rem] px-[.5rem] pr-[8rem] border bg-transparent text-[.8rem] text-white' 
+                  onClick={handleInputClick}
+                 />
+                <input type="password"
+                  placeholder='Password' 
+                  className='outline-none py-[.3rem] px-[.5rem] pr-[8rem] border bg-transparent text-[.8rem] text-white' 
+                  onClick={handleInputClick} 
+                />
                 <p className='text-[.7rem] py-1 pb-5'>Forgot Password?</p>
               </div>
-              <input type="submit" placeholder='Submit'  className='outline-none py-[.3rem] px-[6.9rem] border bg-transparent text-[.8rem]'/>  
+                <input type="submit" 
+                placeholder='Submit'  
+                className='outline-none py-[.3rem] px-[6.9rem] border bg-transparent text-[.8rem]'
+              />  
           </form>
         </div>
       </div>

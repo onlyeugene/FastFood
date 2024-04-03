@@ -46,21 +46,41 @@ const Hero = () => {
     return () => clearTimeout(typedTextTimeout);
   }, [typedTextIndex]);
 
+  // useEffect(() => {
+  //   // Add 'fade-in' class to trigger fade-in effect
+  //   typedTextRef.current.classList.add('fade-in');
+
+  //   // Remove 'fade-in' class after the transition ends
+  //   const transitionEndListener = () => {
+  //     typedTextRef.current.classList.remove('fade-in');
+  //   };
+
+  //   typedTextRef.current.addEventListener('transitionend', transitionEndListener);
+
+  //   // Cleanup event listener
+  //   return () => {
+  //     typedTextRef.current.removeEventListener('transitionend', transitionEndListener);
+  //   };
+  // }, [typedTextIndex]);
+
   useEffect(() => {
     // Add 'fade-in' class to trigger fade-in effect
-    typedTextRef.current.classList.add('fade-in');
-
-    // Remove 'fade-in' class after the transition ends
-    const transitionEndListener = () => {
-      typedTextRef.current.classList.remove('fade-in');
-    };
-
-    typedTextRef.current.addEventListener('transitionend', transitionEndListener);
-
-    // Cleanup event listener
-    return () => {
-      typedTextRef.current.removeEventListener('transitionend', transitionEndListener);
-    };
+    const element = typedTextRef.current;
+    if (element) {
+      typedTextRef.current.classList.add('fade-in');
+  
+      // Remove 'fade-in' class after the transition ends
+      const transitionEndListener = () => {
+        typedTextRef.current.classList.remove('fade-in');
+      };
+  
+      typedTextRef.current.addEventListener('transitionend', transitionEndListener);
+  
+      // Cleanup event listener
+      return () => {
+        element.removeEventListener('transitionend', transitionEndListener);
+      };
+    }
   }, [typedTextIndex]);
 
   
