@@ -71,7 +71,7 @@ const Navbar = () => {
     <div className={`w-full z-20 text-white fixed top-0 ${scrolled ? 'bg-lime-600' : ''}`}>
       <div className='flex justify-between py-[1rem] px-[2rem]'>
         <Link to={'/'}>
-          <h1>FastFood</h1>
+          <h1 className='cursor--pointer'>FastFood</h1>
         </Link>
         <nav>
             <ul className='flex gap-[1.5rem] cursor-pointer'>
@@ -96,7 +96,7 @@ const Navbar = () => {
             <img src={padlock} alt="padlock icon" className='w-[2.5rem] pb-5'/>
           </div>
           <form action="">
-              <div className='flex flex-col gap-[1rem] '>
+              <div className='flex flex-col gap-[1rem] '  onClick={(b) => b.stopPropagation()}>
                 <input type="username"
                   placeholder='Username' 
                   className='outline-none py-[.3rem] px-[.5rem] pr-[8rem] border bg-transparent text-[.8rem] text-white' 
