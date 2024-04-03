@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
 import HomeIndex from './Pages/Home/HomeIndex'
 import AboutIndex from './Pages/About/AboutIndex'
+import RestaurantPage from './Pages/RestaurantPage/RestaurantPage'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Routes>
         <Route index element = {<HomeIndex/>}/>
         <Route  path="about" element={ <AboutIndex/>} />
+        <Route  path="restaurantPage" element={ <RestaurantPage/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>
