@@ -137,3 +137,6 @@ input[type='username']::placeholder{
   z-index: 3;
 } */
 
+html{
+  scroll-behavior: smooth;
+}
