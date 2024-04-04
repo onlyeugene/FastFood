@@ -113,7 +113,7 @@ const Navbar = () => {
               </div>
                 <input type="submit" 
                 placeholder='Submit'  
-                className='outline-none py-[.3rem] px-[6.9rem] border bg-transparent text-[.8rem]'
+                className='outline-none py-[.4rem] px-[6.9rem] rounded-sm hover:bg-slate-800 hover:border-slate-800 border bg-transparent text-[.8rem]'
               />  
           </form>
         </div>
