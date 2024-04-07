@@ -15,6 +15,7 @@ import diet from '../../../assets/diet.jpg'
 import fanta from '../../../assets/fanta.jpg'
 import enchiladas from '../../../assets/enchiladas.jpg'
 import shopping from '../../../assets/shopping.png'
+import arrow from '../../../assets/rightarrow.png'
 import {Link} from 'react-router-dom'
 
 const RestaurantContents = () => {
@@ -31,42 +32,54 @@ const RestaurantContents = () => {
           
           <div className='border w-full rounded-[3px]  pr-[rem] bg-white'>
             <a href="#starters">
-              <div className='border-b-[1px] py-[1rem] bg-gray-200 w-full pr-[2rem] pl-[.5rem]'>
+              <div className='flex justify-between items-center border-b-[1px] py-[1rem] bg-gray-200 w-full pr-[.5rem] pl-[.5rem]'>
                 <h1 className='text-[.7rem] font-light'>Starters 
                 <span className='text-[.6rem] text-gray-500'>
                   (131)
                 </span>
                 </h1>
+                <div>
+                  <img src={arrow} alt="" className='w-[.5rem]'/>
+                </div>
               </div>
             </a>
 
             <a href="#main">
-              <div className='border-b-[1px] py-[1rem] w-full pr-[2rem] pl-[.5rem]'>
+              <div className='flex justify-between items-center border-b-[1px] py-[1rem] w-full pr-[.5rem] pl-[.5rem]'>
                 <h1 className='text-[.7rem] font-light'>Main Courses
                 <span className='text-[.6rem] text-gray-500'>
                   (20)
                 </span>
                 </h1>
+                <div>
+                  <img src={arrow} alt="" className='w-[.5rem]'/>
+                </div>
               </div>
             </a>
 
             <a href="#dessert">
-              <div className='border-b-[1px] py-[1rem] w-full pr-[2rem] pl-[.5rem]'>
+              <div className='flex justify-between items-center border-b-[1px] py-[1rem] w-full pr-[.5rem] pl-[.5rem]'>
                 <h1 className='text-[.7rem] font-light'>Desserts
                 <span className='text-[.6rem] text-gray-500'>
                   (11)
                 </span>
                 </h1>
+                <div>
+                  <img src={arrow} alt="" className='w-[.5rem]'/>
+                </div>
               </div>
             </a>
 
             <a href="#drinks">
-              <div className='py-[1rem] w-full pr-[2rem] pl-[.5rem]'>
+              <div className='flex justify-between items-center py-[1rem] w-full pr-[.5rem] pl-[.5rem]'>
                 <h1 className='text-[.7rem] font-light'>Drinks
                 <span className='text-[.6rem] text-gray-500'>
                   (20)
                 </span>
                 </h1>
+                <div>
+                  <img src={arrow} alt="" className='w-[.5rem]'/>
+                </div>
               </div>
             </a>
           </div>
@@ -119,7 +132,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 9,40</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -131,7 +144,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 6,80</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -143,7 +156,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 5,70</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -155,7 +168,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p id='main' className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 5,20</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                 </div>
               </div>
@@ -192,7 +205,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 12,00</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -204,7 +217,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p id='dessert' className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 24,71</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                 </div>
                 </div>
@@ -246,7 +259,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 24,71</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -258,7 +271,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 7,50</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -270,7 +283,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 9,70</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -282,7 +295,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p id='drinks' className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 12,00</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                 </div>
               </div>
@@ -322,7 +335,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 5,70</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -334,7 +347,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 2,70</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -346,7 +359,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 5,70</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
@@ -358,7 +371,7 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 2,70</p>
-                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
+                    <div  className='text-pink-500 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-pink-500'>+</div>
                   </div>
                 </div>
               </div>
@@ -370,7 +383,7 @@ const RestaurantContents = () => {
 
 
         {/* YOUR ORDER SECTION  */}
-        <div className=''>
+        <div className='w-[30%] h-[calc(100vh - 200px)] overflow-y-auto'>
           <div className='flex justify-between  items-center border-gray-200 border bg-gray-200 py-2.5 text-[.9rem] px-[1rem] pr-[rem] '>
             <h1 className=''>Your order</h1>
             <div>
