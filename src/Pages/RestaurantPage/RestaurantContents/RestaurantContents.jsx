@@ -1,9 +1,19 @@
 import React from 'react'
 import help from '../../../assets/help.png'
-import plus1 from '../../../assets/plus red.png'
-import plus2 from '../../../assets/plus black.png'
+import fajita from '../../../assets/fajita.jpg'
+import royal from '../../../assets/royal.jpg'
+import chicken from '../../../assets/chicken.jpg'
+import cheese from '../../../assets/cheese.jpg'
+import chorizo from '../../../assets/chorizo.jpg'
+import chocolate from '../../../assets/chocolate.jpg'
+import cake from '../../../assets/cake.jpg'
+import apple from '../../../assets/apple.jpg'
+import roles from '../../../assets/roles.jpg'
+import coke from '../../../assets/coke.jpg'
+import dietcoke from '../../../assets/diet coke.jpg'
+import diet from '../../../assets/diet.jpg'
+import fanta from '../../../assets/fanta.jpg'
 import enchiladas from '../../../assets/enchiladas.jpg'
-import No from '../../../assets/No.png'
 import shopping from '../../../assets/shopping.png'
 import {Link} from 'react-router-dom'
 
@@ -109,43 +119,43 @@ const RestaurantContents = () => {
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 9,40</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={fajita} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>2. Fajitas</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 6,80</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={royal} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>3. Royal Fajitas</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 5,70</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2 mb-4'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={chicken} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>4. Chicken Enchilada Wrap</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p id='main' className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 5,20</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                 </div>
               </div>
@@ -176,25 +186,25 @@ const RestaurantContents = () => {
               <div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={cheese} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>5. Cheeses Quesidilla</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 12,00</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={chorizo} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>6. Chorizo & Cheese</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p id='dessert' className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 24,71</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                 </div>
                 </div>
@@ -230,49 +240,49 @@ const RestaurantContents = () => {
               <div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={chocolate} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>7. Chocolate Fudge Cake</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 24,71</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={cake} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>8. Cheesecake</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 7,50</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={apple} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>9. Apple Pie & Custard</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 9,70</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2 mb-4'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={roles} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>10. Profiteroles</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p id='drinks' className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 12,00</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                 </div>
               </div>
@@ -306,49 +316,49 @@ const RestaurantContents = () => {
               <div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={coke} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>11. Coke 0.33L</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 5,70</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={dietcoke} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>12. Diet Coke 0.33L</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 2,70</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={diet} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>13. Diet Coke 1L</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 5,70</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                   <div className='border-b-[1px] p-2'></div>
                 </div>
                 <div className=' px-[1.6rem] py-2 mb-4'>
                   <div className='flex gap-[1rem] items-center'>
-                    <img src={enchiladas} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
+                    <img src={fanta} alt="meixcan enchiladas" className='w-[3rem] h-[3rem]'/>
                     <div className='text-[.7rem] text-gray-600'>
                       <h1 className='font-medium text-[.8rem] text-black'>14. Fanta Orange 0.33L</h1>
                       <p>Fuisset mentitum deleniti sit ea.</p>
                     </div>
                     <p className='pl-[2.2rem] font-semibold text-gray-600 text-[.7rem]'>&euro; 2,70</p>
-                    <img src={plus1} alt="plus icon" className='w-[2.5rem] pl-[1rem]'/>
+                    <div  className='text-red-900 border-[1px] hover:text-gray-900 text-[1rem] py-[.5px] px-[7px] hover:border-gray-900 ml-[1rem]  rounded-[2rem] border-red-900'>+</div>
                   </div>
                 </div>
               </div>
@@ -373,8 +383,8 @@ const RestaurantContents = () => {
             <div>
               <div className='flex p-1.5 items-center justify-between font-medium text-[.7rem]'>
                 <div className='flex gap-1 items-center'>
-                  <div>
-                    <img src={No} alt="" className='w-[1rem]'/>
+                <div className='text-white border-[1px] hover:border-red-900 py-[.5px] px-[5px] hover:bg-red-900  rounded-[2rem] bg-gray-200'>
+                  -
                   </div>
                   <div>
                     <h1>1x <span className='text-gray-600 font-light'>Enchiladas</span></h1>
@@ -387,8 +397,8 @@ const RestaurantContents = () => {
 
               <div className='flex p-1.5 items-center justify-between font-medium text-[.7rem]'>
                 <div className='flex gap-1 items-center'>
-                  <div>
-                    <img src={No} alt="" className='w-[1rem]'/>
+                <div className='text-white border-[1px] hover:border-red-900 py-[.5px] px-[5px] hover:bg-red-900  rounded-[2rem] bg-gray-200'>
+                  -
                   </div>
                   <div>
                     <h1>2x <span className='text-gray-600 font-light'>Buritto</span></h1>
@@ -400,8 +410,8 @@ const RestaurantContents = () => {
 
               <div className='flex p-1.5 items-center justify-between font-medium text-[.7rem]'>
                 <div className='flex gap-1 items-center'>
-                  <div>
-                    <img src={No} alt="" className='w-[1rem]'/>
+                <div className='text-white border-[1px] hover:border-red-900 py-[.5px] px-[5px] hover:bg-red-900  rounded-[2rem] bg-gray-200'>
+                  -
                   </div>
                   <div>
                     <h1>1x <span className='text-gray-600 font-light'>Chicken</span></h1>
@@ -414,8 +424,8 @@ const RestaurantContents = () => {
 
               <div className='flex p-1.5 items-center justify-between font-medium text-[.7rem]'>
                 <div className='flex gap-1 items-center'>
-                  <div>
-                    <img src={No} alt="" className='w-[1rem]'/>
+                <div className='text-white border-[1px] hover:border-red-900 py-[.5px] px-[5px] hover:bg-red-900  rounded-[2rem] bg-gray-200'>
+                  -
                   </div>
                   <div>
                     <h1>2x <span className='text-gray-600 font-light'>Corona Beer</span></h1>
@@ -427,8 +437,8 @@ const RestaurantContents = () => {
 
               <div className='flex p-1.5 items-center justify-between font-medium text-[.7rem]'>
                 <div className='flex gap-1 items-center'>
-                  <div>
-                    <img src={No} alt="" className='w-[1rem]'/>
+                  <div className='text-white border-[1px] hover:border-red-900 py-[.5px] px-[5px] hover:bg-red-900  rounded-[2rem] bg-gray-200'>
+                  -
                   </div>
                   <div>
                     <h1>2x <span className='text-gray-600 font-light'>Cheese Cake</span></h1>
@@ -441,16 +451,14 @@ const RestaurantContents = () => {
           <div className='border bg-white p-3'>
             <div className='flex justify-between px-[1rem] gap-[2rem] text-[.8rem]'>
               <div className='flex items-center gap-2'>
-                <div>
-                  <img src={No} alt="" className='w-[1rem]'/>
+                <div className='border-[1.5px] py-2 px-2 rounded-xl hover:border-gray-600'>
                 </div>
-                <h1>Delivery</h1>
+                <h1 className='text-[.7rem] font-medium'>Delivery</h1>
               </div>
               <div className='flex items-center gap-2'>
-                <div>
-                  <img src={No} alt="" className='w-[1rem]'/>
+                <div className='border-[1.5px] py-2 px-2 rounded-xl hover:border-gray-600'>
                 </div>
-                <h1>Takeaway</h1>
+                <h1 className='text-[.7rem] font-medium'>Takeaway</h1>
               </div>
             </div>
           </div>
