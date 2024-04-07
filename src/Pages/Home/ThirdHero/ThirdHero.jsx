@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import office from '../../../assets/office.jpg'
+import { Link } from 'react-router-dom';
 
 const ThirdHero = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -24,9 +25,9 @@ const ThirdHero = () => {
                     <h1 className='text-[1.8rem] font-extralight inset-x-0 '>Choose from over 2,000 Restaurants</h1>
                     <p className='text-[.7rem]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae voluptas veritatis.</p>
                 </div>
-                <div>
+                <Link  to={'/restaurantPage'}>
                     <button className='border-white border-[1.5px] rounded-sm py-[.5rem] px-[1.5rem] text-[.7rem]'>VIEW ALL RESTUARANTS</button>
-                </div>
+                </Link>
             </div>
             <div className=' p-[16rem] text-white text-center px-[22rem]'>
                 <h1 className='text-[2.5rem] font-extralight'>We also deliver to your office</h1>

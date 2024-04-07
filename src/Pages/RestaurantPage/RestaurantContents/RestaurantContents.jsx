@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import help from '../../../assets/help.png'
 import fajita from '../../../assets/fajita.jpg'
 import royal from '../../../assets/royal.jpg'
@@ -16,9 +16,19 @@ import fanta from '../../../assets/fanta.jpg'
 import enchiladas from '../../../assets/enchiladas.jpg'
 import shopping from '../../../assets/shopping.png'
 import arrow from '../../../assets/rightarrow.png'
+import checked from '../../../assets/checked.png'
 import {Link} from 'react-router-dom'
 
 const RestaurantContents = () => {
+
+  const [selectedOption, setSelectedOption] = useState('delivery');
+
+  // Function to handle option selection
+  const handleOptionChange = (option) => {
+    setSelectedOption(option);
+  };
+
+
   return (
     <div className='w-full p-[3rem] justify-center items-center flex flex-col bg-gray-100'>
       <div className='flex gap-[4rem]'>
@@ -464,12 +474,32 @@ const RestaurantContents = () => {
           <div className='border bg-white p-3'>
             <div className='flex justify-between px-[1rem] gap-[2rem] text-[.8rem]'>
               <div className='flex items-center gap-2'>
-                <div className='border-[1.5px] py-2 px-2 rounded-xl hover:border-gray-600'>
+                <div
+                  className={`border-[1.5px] border-gray-400 py-[5px] px-[5px] rounded-3xl ${
+                    selectedOption === 'delivery' ? 'border-gray-600' : 'hover:border-gray-600'
+                  }`}
+                  onClick={() => handleOptionChange('delivery')}
+                >
+                  {/* Icon or Checkmark for Delivery */}
+                  {selectedOption === 'delivery' && (
+                    <img src={checked} alt="" className='w-[1rem]'/>
+                  )}
                 </div>
                 <h1 className='text-[.7rem] font-medium'>Delivery</h1>
               </div>
+              {/* Takeaway Option */}
               <div className='flex items-center gap-2'>
-                <div className='border-[1.5px] py-2 px-2 rounded-xl hover:border-gray-600'>
+                <div
+                  className={`border-[1.5px] border-gray-400 py-[5px] px-[5px] rounded-3xl ${
+                    selectedOption === 'takeaway' ? 'border-gray-600' : 'hover:border-gray-600'
+                  }`}
+                  onClick={() => handleOptionChange('takeaway')}
+                >
+                  {/* Icon or Checkmark for Takeaway */}
+                  {selectedOption === 'takeaway' && (
+                    <img src={checked} alt="" className='w-[1rem]'/>
+                    
+                  )}
                 </div>
                 <h1 className='text-[.7rem] font-medium'>Takeaway</h1>
               </div>

@@ -15,7 +15,7 @@ const Restaurants = () => {
         <p className='text-[.8rem] text-gray-600 '>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
       </div>
       <div className='flex gap-[2rem]'>
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-[2rem]'>
             <div className='card w-[32rem]'>
                 <div className='flex'>
                     <img src={mexican} alt="" className='p-1 ml-[3em] m-3 border w-[6rem]'/>
@@ -93,7 +93,7 @@ const Restaurants = () => {
 
         {/* SECOND ROW OF CARDS */}
 
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-[2rem]'>
             <div className='card w-[32rem]'>
                 <div className='flex'>
                     <img src={Sushi} alt="" className='p-1 m-3 border w-[6rem] ml-[3em]'/>
