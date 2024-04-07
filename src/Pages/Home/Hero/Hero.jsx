@@ -33,7 +33,7 @@ const Hero = () => {
   //       };
   //     }, []);
 
-      const typedTextRef = useRef(null);
+  const typedTextRef = useRef(null);
   const [typedTextIndex, setTypedTextIndex] = useState(0);
   const typedTexts = ['fast', 'Takeaway', 'Delivery'];
 

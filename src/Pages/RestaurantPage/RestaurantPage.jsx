@@ -2,7 +2,7 @@ import React from 'react'
 import RestaurantHero from './RestaurantHero/RestaurantHero'
 import RestaurantHero2 from './RestaurantHero/RestaurantHero2/RestaurantHero2'
 import RestaurantContents from './RestaurantContents/RestaurantContents'
-import OrderPage from './OrderPage/OrderPage'
+import OrderPage from '../Order/OrderPage/OrderPage'
 
 const RestaurantPage = () => {
   return (

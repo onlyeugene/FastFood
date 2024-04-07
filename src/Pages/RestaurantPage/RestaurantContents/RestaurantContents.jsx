@@ -31,7 +31,7 @@ const RestaurantContents = () => {
 
   return (
     <div className='w-full p-[3rem] justify-center items-center flex flex-col bg-gray-100'>
-      <div className='flex gap-[4rem]'>
+      <div className='flex gap-[4rem] relative'>
 
       {/* BACK TO SEARCH SECTION  */}
         <div className='flex flex-col gap-[2rem]'>
@@ -393,7 +393,7 @@ const RestaurantContents = () => {
 
 
         {/* YOUR ORDER SECTION  */}
-        <div className='w-[30%] h-[calc(100vh - 200px)] overflow-y-auto'>
+        <div className=' sticky'>
           <div className='flex justify-between  items-center border-gray-200 border bg-gray-200 py-2.5 text-[.9rem] px-[1rem] pr-[rem] '>
             <h1 className=''>Your order</h1>
             <div>
@@ -520,7 +520,7 @@ const RestaurantContents = () => {
 
 
               <div className='flex justify-between font-semibold text-gray-600'>
-                <h1>Subtotal</h1>
+                <h1>Total</h1>
                 <p>$66</p>
               </div>
           </div>

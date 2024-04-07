@@ -3,16 +3,16 @@ import taco from '../../../assets/taco.jpg'
 
 const OrderPage = () => {
   return (
-    <div className='w-full relative flex flex-col justify-center items-center'>
+    <div className='w-full relative flex flex-col justify-center items-center overflow-y-scroll'>
         <div>
             <img src={taco} alt="" className='w-full'/>
         </div>
         <div className='bg-[#000000a2] absolute flex flex-col text-white justify-center items-center  py-[1rem] h-full w-full'>
            <h1 className='text-[2.5rem] font-extralight'>Place Your Order</h1>
-           <div className='flex justify-between w-[40em] pb-4'>
-                <p>1. <span>Your details</span></p>
-                <p>2. <span>Payment</span></p>
-                <p>3. <span>Finish!</span></p>
+           <div className='flex justify-between w-[40em] pb-[2rem] font-semibold'>
+                <p>1. <span className='font-light text-[.8rem]'>Your details</span></p>
+                <p>2. <span className='font-light text-[.8rem]'>Payment</span></p>
+                <p>3. <span className='font-light text-[.8rem]'>Finish!</span></p>
            </div>
            <div className='w-[35rem] border-[4px]  rounded relative'>
                 <div className=''>
